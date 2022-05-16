@@ -38,7 +38,7 @@ body {
 }
 
 .wrapper {
-    width: 37.5rem;
+    width: min(50rem, 100%);
     margin-inline: auto;
     padding-inline: 2.4rem;
 }
@@ -154,6 +154,11 @@ button.open-menu {
     transform: translateX(100%);
 }
 
+nav .menu,
+nav .close-menu {
+    position: fixed;
+}
+
 /*=================MENU-EXPANDED================*/
 body.menu-expanded {
 overflow: hidden;
@@ -182,7 +187,6 @@ transform: translateY(100%);
 }
 
 body.menu-expanded .menu {
-position: fixed;
 top: 0;
 left: 0;
 background: var(--main-color);
@@ -279,7 +283,7 @@ object-position: 0 2rem;
 }
 
 #home .stats {
-width: 32.7rem;
+width: 100%;
 padding-block: 4rem;
 margin-inline: auto;
 border: 1px solid var(--brand-green-light-color);
